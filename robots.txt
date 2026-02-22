@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://outboundmalang.com/sitemap.xml
+
+# Outbound Malang - Gemilang Katun Outbound
+# Website outbound dan team building profesional di Kota Batu, Malang
