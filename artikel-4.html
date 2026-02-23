@@ -30,10 +30,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    <link rel="preload" as="image" type="image/svg+xml" href="images/rafting-keluarga.svg" fetchpriority="high" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
-    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="preload"
         as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -285,8 +283,89 @@
     </nav>
 
     <section class="article-hero" style="padding-top:76px">
-        <img src="images/rafting-keluarga.svg" alt="Rafting keluarga di Batu Malang" loading="eager"
-            fetchpriority="high" width="1920" height="800" />
+        <svg preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0;" role="img" aria-label="Rafting keluarga di Batu Malang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500"  >
+  <defs>
+    <linearGradient id="skyR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4A90C4"/>
+      <stop offset="100%" stop-color="#7DB8A5"/>
+    </linearGradient>
+    <linearGradient id="river" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E86AB"/>
+      <stop offset="100%" stop-color="#1B6E8F"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#skyR)"/>
+  <!-- Mountains -->
+  <path d="M0,200 L80,120 L180,180 L300,80 L420,160 L550,100 L700,150 L800,120 L800,500 L0,500Z" fill="#2A5235"/>
+  <!-- Trees -->
+  <g fill="#1E4733">
+    <polygon points="30,200 55,120 80,200"/>
+    <polygon points="100,190 125,110 150,190"/>
+    <polygon points="600,180 625,100 650,180"/>
+    <polygon points="700,190 725,110 750,190"/>
+  </g>
+  <!-- Riverbanks -->
+  <path d="M0,300 Q100,280 200,290 Q300,300 400,285 Q500,270 600,280 Q700,290 800,275 L800,500 L0,500Z" fill="#1A4331"/>
+  <!-- River -->
+  <path d="M0,320 Q100,310 200,325 Q300,340 400,320 Q500,300 600,315 Q700,330 800,310 L800,420 Q700,440 600,425 Q500,410 400,430 Q300,450 200,435 Q100,420 0,440Z" fill="url(#river)"/>
+  <!-- Water ripples -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none">
+    <path d="M50,340 Q80,335 110,340"/>
+    <path d="M180,350 Q210,345 240,350"/>
+    <path d="M320,335 Q350,330 380,335"/>
+    <path d="M450,345 Q480,340 510,345"/>
+    <path d="M550,330 Q580,325 610,330"/>
+    <path d="M650,340 Q680,335 710,340"/>
+    <path d="M100,380 Q130,375 160,380"/>
+    <path d="M300,390 Q330,385 360,390"/>
+    <path d="M500,375 Q530,370 560,375"/>
+  </g>
+  <!-- Raft with family -->
+  <g transform="translate(350,330)">
+    <ellipse cx="0" cy="0" rx="70" ry="18" fill="#E87040"/>
+    <ellipse cx="0" cy="0" rx="63" ry="12" fill="#D4603A"/>
+    <!-- Adult 1 (Dad) -->
+    <circle cx="-35" cy="-18" r="9" fill="#FFD6A5"/>
+    <rect x="-42" y="-9" width="14" height="12" rx="2" fill="#FF6933"/>
+    <ellipse cx="-35" cy="-22" rx="10" ry="5" fill="#2D5A3D"/>
+    <!-- Paddle -->
+    <line x1="-50" y1="-15" x2="-75" y2="10" stroke="#8B6914" stroke-width="2.5"/>
+    <ellipse cx="-77" cy="12" rx="5" ry="10" fill="#8B6914" transform="rotate(-25,-77,12)"/>
+    <!-- Adult 2 (Mom) -->
+    <circle cx="35" cy="-18" r="9" fill="#E8C9A0"/>
+    <rect x="28" y="-9" width="14" height="12" rx="2" fill="#3B82F6"/>
+    <ellipse cx="35" cy="-22" rx="10" ry="5" fill="#E85D3A"/>
+    <!-- Paddle -->
+    <line x1="50" y1="-15" x2="75" y2="10" stroke="#8B6914" stroke-width="2.5"/>
+    <ellipse cx="77" cy="12" rx="5" ry="10" fill="#8B6914" transform="rotate(25,77,12)"/>
+    <!-- Child 1 -->
+    <circle cx="-5" cy="-16" r="7" fill="#FFD6A5"/>
+    <rect x="-10" y="-9" width="10" height="10" rx="2" fill="#FFA500"/>
+    <ellipse cx="-5" cy="-19" rx="8" ry="4" fill="#4CAF50"/>
+    <!-- Child 2 -->
+    <circle cx="15" cy="-16" r="7" fill="#E8C9A0"/>
+    <rect x="10" y="-9" width="10" height="10" rx="2" fill="#9C27B0"/>
+    <ellipse cx="15" cy="-19" rx="8" ry="4" fill="#FF6933"/>
+  </g>
+  <!-- Splash -->
+  <g fill="rgba(255,255,255,0.5)">
+    <circle cx="270" cy="325" r="3"/>
+    <circle cx="265" cy="320" r="2"/>
+    <circle cx="275" cy="318" r="2.5"/>
+    <circle cx="435" cy="320" r="3"/>
+    <circle cx="440" cy="315" r="2"/>
+  </g>
+  <!-- Bamboo along river -->
+  <g stroke="#3D6B4E" stroke-width="3" fill="none">
+    <line x1="20" y1="500" x2="30" y2="280"/>
+    <line x1="35" y1="500" x2="40" y2="290"/>
+    <line x1="760" y1="500" x2="770" y2="270"/>
+    <line x1="780" y1="500" x2="785" y2="280"/>
+  </g>
+  <!-- Sun -->
+  <circle cx="700" cy="60" r="30" fill="#FFE4B5" opacity="0.6"/>
+</svg>
+
         <div class="overlay"></div>
         <div class="container position-relative pb-5" style="z-index:2">
             <div class="breadcrumb-custom mb-3"><a href="index.html">Beranda</a><span class="mx-2">/</span><a
@@ -427,3 +506,4 @@
 </body>
 
 </html>
+

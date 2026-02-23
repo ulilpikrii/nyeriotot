@@ -45,12 +45,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <!-- Preload LCP Image -->
-    <link rel="preload" as="image" type="image/svg+xml" href="images/hero-bg.svg" fetchpriority="high" />
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
     <!-- Bootstrap 5 CSS -->
-    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="preload"
@@ -657,9 +655,65 @@
     <!-- Hero Section -->
     <section class="hero-section" id="beranda">
         <div class="hero-bg">
-            <img src="images/hero-bg.svg"
-                alt="Pemandangan pegunungan dan hutan di Kota Batu Malang untuk kegiatan outbound" loading="eager"
-                fetchpriority="high" width="1920" height="1080" />
+            <svg preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0;" role="img" aria-label="Pemandangan pegunungan dan hutan di Kota Batu Malang untuk kegiatan outbound" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"  >
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#87CEEB"/>
+      <stop offset="40%" stop-color="#B0D4E8"/>
+      <stop offset="100%" stop-color="#E8F4E8"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.3)"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="80%" cy="15%">
+      <stop offset="0%" stop-color="#FFF8DC" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#FFE4B5" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <!-- Sun glow -->
+  <rect width="1920" height="1080" fill="url(#sun)"/>
+  <!-- Far mountains -->
+  <path d="M0,500 L200,350 L400,420 L550,300 L700,380 L850,280 L1000,350 L1150,250 L1300,320 L1450,270 L1600,340 L1750,290 L1920,360 L1920,1080 L0,1080 Z" fill="#5B8A6B" opacity="0.5"/>
+  <!-- Mid mountains -->
+  <path d="M0,550 L150,430 L350,500 L500,380 L650,460 L800,350 L950,420 L1100,330 L1250,400 L1400,340 L1550,410 L1700,350 L1920,430 L1920,1080 L0,1080 Z" fill="#3D6B4E" opacity="0.7"/>
+  <!-- Near mountains with trees -->
+  <path d="M0,600 L100,520 L250,570 L400,480 L550,540 L700,450 L850,520 L1000,430 L1150,500 L1300,440 L1450,510 L1600,450 L1750,510 L1920,470 L1920,1080 L0,1080 Z" fill="#2A5235"/>
+  <!-- Pine trees silhouette layer 1 -->
+  <g fill="#1A4331">
+    <polygon points="100,580 120,500 140,580"/>
+    <polygon points="130,575 150,490 170,575"/>
+    <polygon points="200,570 225,480 250,570"/>
+    <polygon points="300,560 320,475 340,560"/>
+    <polygon points="350,555 375,460 400,555"/>
+    <polygon points="450,570 475,485 500,570"/>
+    <polygon points="520,575 545,490 570,575"/>
+    <polygon points="600,560 625,470 650,560"/>
+    <polygon points="700,550 725,455 750,550"/>
+    <polygon points="770,560 795,470 820,560"/>
+    <polygon points="850,565 875,475 900,565"/>
+    <polygon points="950,555 975,460 1000,555"/>
+    <polygon points="1020,560 1045,470 1070,560"/>
+    <polygon points="1100,570 1125,480 1150,570"/>
+    <polygon points="1200,555 1225,460 1250,555"/>
+    <polygon points="1300,560 1325,470 1350,560"/>
+    <polygon points="1400,555 1425,465 1450,555"/>
+    <polygon points="1500,565 1525,475 1550,565"/>
+    <polygon points="1600,555 1625,460 1650,555"/>
+    <polygon points="1700,560 1725,475 1750,560"/>
+    <polygon points="1800,565 1825,480 1850,565"/>
+  </g>
+  <!-- Foreground forest -->
+  <path d="M0,700 Q200,650 400,680 Q600,700 800,670 Q1000,640 1200,680 Q1400,710 1600,680 Q1800,650 1920,680 L1920,1080 L0,1080 Z" fill="#1A4331"/>
+  <!-- Mist -->
+  <rect y="500" width="1920" height="200" fill="url(#mist)" opacity="0.4"/>
+  <!-- Ground -->
+  <path d="M0,800 Q480,770 960,790 Q1440,810 1920,780 L1920,1080 L0,1080 Z" fill="#15372A"/>
+</svg>
+
             <div class="hero-overlay"></div>
         </div>
         <div class="container hero-content pt-5">
@@ -1039,3 +1093,4 @@
 </body>
 
 </html>
+
