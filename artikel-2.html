@@ -36,10 +36,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preload" as="image" href="images/offroad-hutanpinus.svg" fetchpriority="high" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="preload"
+        as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+            rel="stylesheet" />
+    </noscript>
     <style>
         :root {
             --primary: #ff6933;
@@ -317,7 +323,7 @@
 
     <section class="article-hero" style="padding-top:76px">
         <img src="images/offroad-hutanpinus.svg" alt="Paket Fun Offroad Hutan Pinus di Kota Batu" loading="eager"
-            width="1920" height="800" />
+            fetchpriority="high" width="1920" height="800" />
         <div class="overlay"></div>
         <div class="container position-relative pb-5" style="z-index:2">
             <div class="breadcrumb-custom mb-3">
@@ -477,7 +483,7 @@
                 class="bi bi-arrow-up"></i></button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script>const s = document.getElementById('scrollTopBtn'); window.addEventListener('scroll', () => s.classList.toggle('show', scrollY > 400)); s.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));</script>
+    <script>const s = document.getElementById('scrollTopBtn'); window.addEventListener('scroll', () => s.classList.toggle('show', scrollY > 400), { passive: true }); s.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));</script>
 </body>
 
 </html>
