@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="skyF" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5BA3D9"/>
+      <stop offset="100%" stop-color="#8BC5A0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#skyF)"/>
+  <!-- Mountains -->
+  <path d="M0,250 L100,160 L220,230 L350,130 L480,200 L620,140 L800,190 L800,500 L0,500Z" fill="#2A5235"/>
+  <!-- Trees -->
+  <g fill="#1E4733">
+    <polygon points="40,240 65,150 90,240"/>
+    <polygon points="650,230 680,130 710,230"/>
+    <polygon points="720,240 745,150 770,240"/>
+  </g>
+  <!-- Ground & Building area -->
+  <path d="M0,330 Q200,310 400,320 Q600,330 800,310 L800,500 L0,500Z" fill="#1A4331"/>
+  <!-- Building - outbound facility -->
+  <g transform="translate(200,250)">
+    <!-- Main building -->
+    <rect x="0" y="0" width="180" height="90" rx="3" fill="#3D6B4E"/>
+    <path d="M-10,0 L90,-40 L190,0Z" fill="#2A5235"/>
+    <!-- Windows -->
+    <rect x="15" y="15" width="30" height="25" rx="2" fill="#87CEEB" opacity="0.6"/>
+    <rect x="55" y="15" width="30" height="25" rx="2" fill="#87CEEB" opacity="0.6"/>
+    <rect x="95" y="15" width="30" height="25" rx="2" fill="#87CEEB" opacity="0.6"/>
+    <rect x="135" y="15" width="30" height="25" rx="2" fill="#87CEEB" opacity="0.6"/>
+    <!-- Door -->
+    <rect x="75" y="50" width="30" height="40" rx="2" fill="#23503D"/>
+    <circle cx="100" cy="70" r="2" fill="#D97757"/>
+    <!-- Sign -->
+    <rect x="40" y="-10" width="100" height="15" rx="3" fill="#D97757"/>
+    <text x="90" y="2" font-family="sans-serif" font-size="8" fill="white" text-anchor="middle" font-weight="bold">OUTBOUND CENTER</text>
+  </g>
+  <!-- Secondary building -->
+  <g transform="translate(430,270)">
+    <rect x="0" y="0" width="120" height="70" rx="3" fill="#3D6B4E"/>
+    <path d="M-8,0 L60,-30 L128,0Z" fill="#2A5235"/>
+    <rect x="12" y="15" width="25" height="20" rx="2" fill="#87CEEB" opacity="0.6"/>
+    <rect x="47" y="15" width="25" height="20" rx="2" fill="#87CEEB" opacity="0.6"/>
+    <rect x="82" y="15" width="25" height="20" rx="2" fill="#87CEEB" opacity="0.6"/>
+  </g>
+  <!-- Outdoor equipment area -->
+  <g transform="translate(580,310)">
+    <rect x="0" y="0" width="80" height="30" rx="2" fill="#23503D"/>
+    <path d="M-5,0 L40,-15 L85,0Z" fill="#1A4331"/>
+    <!-- Equipment icons -->
+    <circle cx="20" cy="15" r="8" fill="none" stroke="#D97757" stroke-width="2"/>
+    <circle cx="50" cy="15" r="8" fill="none" stroke="#D97757" stroke-width="2"/>
+  </g>
+  <!-- People -->
+  <g transform="translate(320,330)">
+    <circle cx="0" cy="-12" r="6" fill="#FFD6A5"/>
+    <rect x="-5" y="-6" width="10" height="16" rx="2" fill="#FF6933"/>
+    <circle cx="20" cy="-12" r="6" fill="#E8C9A0"/>
+    <rect x="15" y="-6" width="10" height="16" rx="2" fill="#3B82F6"/>
+    <circle cx="40" cy="-12" r="6" fill="#FFD6A5"/>
+    <rect x="35" y="-6" width="10" height="16" rx="2" fill="#4CAF50"/>
+  </g>
+  <!-- Parking area -->
+  <rect x="100" y="370" width="120" height="60" rx="5" fill="#15372A"/>
+  <g fill="#555">
+    <rect x="115" y="385" width="35" height="20" rx="3"/>
+    <rect x="165" y="385" width="35" height="20" rx="3"/>
+  </g>
+  <!-- Sun -->
+  <circle cx="700" cy="60" r="30" fill="#FFE4B5" opacity="0.6"/>
+</svg>

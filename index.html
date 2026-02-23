@@ -20,8 +20,7 @@
     <meta property="og:description"
         content="Gemilang Katun Outbound menyediakan jasa outbound, team building, fun offroad, rafting keluarga, dan dokumentasi profesional di Kota Batu Malang. Hubungi 0822-1122-1909." />
     <meta property="og:url" content="https://outboundmalang.com/" />
-    <meta property="og:image"
-        content="https://lh3.googleusercontent.com/aida-public/AB6AXuDlhqjvZ3JTqKEMpZzyvcWJIBcfjgRYCfKpQN-RyTSUS-4P14926eQFnZtmkBDMG9ZdGh4fSZflrQtcV-Ptvnl1b47BiFhEvHlQHxJfD2cNQt5JFzvBrQ7T0No4OEXWk92YPShkCc7rV-6l-Wa0GeHF6RJ_pglbjvPQETT8dpEWSGBDNzCaaoU7qHL1FjItmn4RD2rTTS1CXguJ5jH17JlLAd2ePlCWmbUHWh2SgvkSqk0OusLfNjYCFvh-3OihWydmf7Jy6GNcNT0" />
+    <meta property="og:image" content="images/hero-bg.svg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Outbound Malang - Petualangan Alam Terbuka" />
@@ -30,8 +29,7 @@
     <meta name="twitter:title" content="Outbound Malang - Jasa Outbound & Team Building Profesional" />
     <meta name="twitter:description"
         content="Gemilang Katun Outbound menyediakan jasa outbound profesional di Kota Batu Malang. Hubungi 0822-1122-1909." />
-    <meta name="twitter:image"
-        content="https://lh3.googleusercontent.com/aida-public/AB6AXuDlhqjvZ3JTqKEMpZzyvcWJIBcfjgRYCfKpQN-RyTSUS-4P14926eQFnZtmkBDMG9ZdGh4fSZflrQtcV-Ptvnl1b47BiFhEvHlQHxJfD2cNQt5JFzvBrQ7T0No4OEXWk92YPShkCc7rV-6l-Wa0GeHF6RJ_pglbjvPQETT8dpEWSGBDNzCaaoU7qHL1FjItmn4RD2rTTS1CXguJ5jH17JlLAd2ePlCWmbUHWh2SgvkSqk0OusLfNjYCFvh-3OihWydmf7Jy6GNcNT0" />
+    <meta name="twitter:image" content="images/hero-bg.svg" />
     <!-- GEO Tags -->
     <meta name="geo.region" content="ID-JI" />
     <meta name="geo.placename" content="Kota Batu, Malang" />
@@ -65,6 +63,13 @@
 
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            overflow-x: hidden;
+            max-width: 100vw;
         }
 
         body {
@@ -72,6 +77,24 @@
             background-color: var(--bg-dark);
             color: var(--soft-cream);
             overflow-x: hidden;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        img,
+        video,
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 100%;
+        }
+
+        section,
+        .row {
+            max-width: 100vw;
         }
 
         /* Navbar */
@@ -626,7 +649,7 @@
     <!-- Hero Section -->
     <section class="hero-section" id="beranda">
         <div class="hero-bg">
-            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlhqjvZ3JTqKEMpZzyvcWJIBcfjgRYCfKpQN-RyTSUS-4P14926eQFnZtmkBDMG9ZdGh4fSZflrQtcV-Ptvnl1b47BiFhEvHlQHxJfD2cNQt5JFzvBrQ7T0No4OEXWk92YPShkCc7rV-6l-Wa0GeHF6RJ_pglbjvPQETT8dpEWSGBDNzCaaoU7qHL1FjItmn4RD2rTTS1CXguJ5jH17JlLAd2ePlCWmbUHWh2SgvkSqk0OusLfNjYCFvh-3OihWydmf7Jy6GNcNT0"
+            <img src="images/hero-bg.svg"
                 alt="Pemandangan pegunungan dan hutan di Kota Batu Malang untuk kegiatan outbound" loading="eager"
                 width="1920" height="1080" />
             <div class="hero-overlay"></div>
@@ -654,16 +677,13 @@
                     </a>
                     <div class="d-flex align-items-center gap-3 mt-5">
                         <div class="d-flex">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAucsMyzQURAse06Bk4GFsK7oKIrPCXjqMjt8AHkdSYx4LX_T3Ye8mfz87JrOCEAokv41Dxpr6h9TinvfMXH7VTTH0_FWqZ5zmLRmv9ZF8FHXgZfeLfFdFwh6aJD4sZN-eLUpilpkFNAXQY5SmbQ6Jy0Pfy2Uyu5GVyPxTQuPBY4TAulwiS1xPz4VA_UWuUryDSonszkcN57UntgGiy4H7ZKQaU8XEWgLNh2RgTIK7AnegeZEqK1842GYetTsOsVnhOqWZVppvEVoI"
-                                alt="Avatar klien" class="rounded-circle border border-2"
+                            <img src="images/avatar-1.svg" alt="Avatar klien" class="rounded-circle border border-2"
                                 style="width:40px;height:40px;border-color:var(--bg-dark)!important;margin-right:-12px;position:relative;z-index:3"
                                 loading="lazy" width="40" height="40" />
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAth95YFEBUk5Uo6r7pZxSLjxhKFnJRfN73crEWEmkWe05Gffs3IH_N5UDOHLimcTJVxl5zkQ70gY70bxAB3HsF8TJBwsKfBMQQA94whOFAKsMv9REahciVyUNDuz6mBwGYYUr21wfdUvzRprzLLXedXpilGEYSWLNFyh_JxgL5UX3o93nIDm8rihR2wEm_xVQTmKfOasP1PdTyMz8FzWRp8g2pXilHfkvriU5r4104gHIMs7atfgdbJPGHsnjTirj_n37L5oQclq8"
-                                alt="Avatar klien" class="rounded-circle border border-2"
+                            <img src="images/avatar-2.svg" alt="Avatar klien" class="rounded-circle border border-2"
                                 style="width:40px;height:40px;border-color:var(--bg-dark)!important;margin-right:-12px;position:relative;z-index:2"
                                 loading="lazy" width="40" height="40" />
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcU1K6pdItGAMDKDcFjVkBfaWvQgKVvhiD4TfRNHET07fw_xUwNKOUdKl_Fd8nH5SDSOLylVxZ6EWczmLY81zv5tUlYrZax0cRdij1FfvXVlMWz34_K3c6GYNIukCxgKRyeigWabANP6vOE5Wyj0S21M3qAy9y5kuzDWOhp9bCwYLqbgq2i1aV0ysWFhc7OCWaRLliZ6JMRFSxQk3eTtOMGtHqt3Ox7BWyAZJNa3XTXN9G-GM9_a_EFbgbLQKkjP2srpenDHesLmU"
-                                alt="Avatar klien" class="rounded-circle border border-2"
+                            <img src="images/avatar-3.svg" alt="Avatar klien" class="rounded-circle border border-2"
                                 style="width:40px;height:40px;border-color:var(--bg-dark)!important;position:relative;z-index:1"
                                 loading="lazy" width="40" height="40" />
                             <div class="rounded-circle d-flex align-items-center justify-content-center"
@@ -684,9 +704,8 @@
                     <div class="position-relative" style="height: 600px;">
                         <div class="position-relative rounded-4 shadow-lg overflow-hidden"
                             style="width:260px;height:320px;transform:rotate(-6deg);border:4px solid rgba(255,255,255,0.1);z-index:2;margin-top:3rem;margin-left:1rem">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE3mqbJbJupLYybOj3U7dlMDxgqJCBGM0WyYhg3CgnA81V1f29kLBR0t1PrhOOXctRx2b2RyBB9Lr2TwOBHk85xA5xOEEQdO4DQrD8n7bILnATzd-BnXvLoRfoXBzO78OKAPkb02FFeaQKwqr_bzggQ2H9sO_FeBg0FhU4OaMTVc1o519J-VoKKf0rsKZyOAeLByCyv9XbY8lc7EAdrR0Q26k4AR0AkoHw91b81bP7M-_0C1YQn0BAF_YOqcN61PSSMfB-AjSZCSE"
-                                alt="Tim hiking di hutan untuk kegiatan outbound" class="w-100 h-100"
-                                style="object-fit:cover" loading="lazy" width="260" height="320" />
+                            <img src="images/team-hiking.svg" alt="Tim hiking di hutan untuk kegiatan outbound"
+                                class="w-100 h-100" style="object-fit:cover" loading="lazy" width="260" height="320" />
                             <div class="position-absolute bottom-0 start-0 end-0 p-3 glass-card m-3">
                                 <p class="text-white small fw-bold mb-0">Hiking Tim</p>
                                 <p class="small mb-0" style="color:rgba(255,255,255,0.6);font-size:0.65rem">Kota Batu,
@@ -695,9 +714,8 @@
                         </div>
                         <div class="position-absolute rounded-4 shadow-lg overflow-hidden"
                             style="width:290px;height:380px;transform:rotate(3deg);border:4px solid rgba(255,255,255,0.1);top:0;right:0;opacity:0.9">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm1QMV0XfHw-AdKGeepjMvbsiJhLchcDOl7CYXGa04Ut51n0JBU8-zTOWR6dakPilF3rgn_us8CGjVWuNei7Ita0-TGXWZwIKp295BgRPLB8-T54dlHwy8K_3q6PA2eE2tB6LjVJ0EiA1zI6vH9YCIlNacPaVng3I44bFdqqqePMEw_TcCtL-IAzR-5F8a0et0Hld9rLh6RMqK1X1CyglSoIQ4tjT5-kNmNYIntv7B1b6JTPPUP6ULo7e5ceHcKYPZtUaN4DnqT3Q"
-                                alt="Petualangan kayak dan arung jeram" class="w-100 h-100" style="object-fit:cover"
-                                loading="lazy" width="290" height="380" />
+                            <img src="images/kayak-adventure.svg" alt="Petualangan kayak dan arung jeram"
+                                class="w-100 h-100" style="object-fit:cover" loading="lazy" width="290" height="380" />
                         </div>
                     </div>
                 </div>
@@ -803,7 +821,7 @@
                 <div class="col-md-6 col-lg-4">
                     <a href="artikel-1.html" class="text-decoration-none">
                         <div class="article-card">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa5r_MmnFo1xcv7g6CGa0xf5RHV_k4tW2iuToxgWiJAyil1f82H-tjXEFLY2HFjqhf3L6kgP0S-TAbbmZgrdyVE3jNHKFGJZZA6eGfAk00n-FlTeiMw8pztM1UTyExZqouUCPqV1G2cbj8C5paQD_D_ouRM8C2X3E2koRCVpLxtgv22pNJwD-16kakn5XpZSO16IA_72TToLtzr0jj1CYx69MLy_Wbff7ws5GvUCtidW9JKTmDI86A3liyTI9LK689SB6beg085gs"
+                            <img src="images/fotografer-outbound.svg"
                                 alt="Jasa Fotografer Outbound Batu - Dokumentasi profesional kegiatan outbound"
                                 loading="lazy" width="600" height="400" />
                             <div class="card-overlay"></div>
@@ -823,7 +841,7 @@
                 <div class="col-md-6 col-lg-4">
                     <a href="artikel-3.html" class="text-decoration-none">
                         <div class="article-card">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_DAnof5P4KIw2HBoSTrvwr-VejbdKL7KlRhHCWJRzd7XSxszJ1agzqf1QQEJLNtmc13X9zwUvJEjZ6gv9j-pGMTcMMw5dVPkLJhray283KNnhBS9_V472YVWBKZbIMEq80koJ9Mra34qsGY9Z4H7DuBDEy4J8gYi58YEDDL3-QiqgBkxFEKoetZt3luRjej4R_qutiX9ayggzUYkyHzxckXHtG6j8owHKp9DlPfQQGq-yIARoUkw2ctz0xLHnpDpGe0xteunitsk"
+                            <img src="images/fasilitas-outbound.svg"
                                 alt="Tempat Outbound Fasilitas Lengkap di Batu Malang" loading="lazy" width="600"
                                 height="400" />
                             <div class="card-overlay"></div>
@@ -843,9 +861,8 @@
                 <div class="col-md-6 col-lg-4">
                     <a href="artikel-5.html" class="text-decoration-none">
                         <div class="article-card">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvSWzYLzro3Lu4jKYZrryXldmUFYoDPQj2XjDgh2GscOoPOstLgOzjYE0jic6Oy_FAiv6q3ljerLSAVjEo2HO5pqmedKNXhFr4bt1ZSUIMYTjG3Vc1T96oB7Z25TQN_NEqA4qWal9KlUXILOIxcTc1R0OenvX611JDxg-rMrEtP05ybl3QpiaIC54DgwCsKJZMHkGKka3DL_AodTWucSKndT6Q-1dTVocnOQOYxb-kcd5RtBx04_CsB9mJcVW4G3KkQrs3FR5FHkA"
-                                alt="Harga Paket Outbound Hotel Wonderland Batu" loading="lazy" width="600"
-                                height="400" />
+                            <img src="images/hotel-wonderland.svg" alt="Harga Paket Outbound Hotel Wonderland Batu"
+                                loading="lazy" width="600" height="400" />
                             <div class="card-overlay"></div>
                             <div class="card-body">
                                 <h3 class="text-white fw-bold fs-5 mb-2">Harga Paket Outbound Hotel Wonderland</h3>
@@ -869,7 +886,7 @@
 
     <!-- Stats / Parallax Strip -->
     <section class="stats-section py-5"
-        style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZyLdYu5ClF_1bS91KcXpa1VGDdVlRFxOdTNUGXVVSqXzUkcsFwkpl34snDf5Xn0kWpLMn_eLaOlJs-WO9mqG4K_lLAfHOpcpBlBKGeltklt9QNzTL-tRaPdvxPdBPll3Eb4RNugnjEwmkCieIJmPlrVWIrGOQOj_fIadDH3XWIENo5JbYyvCpNq0qkvNJZK5bIQlxp6_ErVNgmJOlN6OM_EziohOAfnmHVdLuZpuQXDMQaCuV0BEAC_k4Xxq7DTs6TFUxL5IByE8');padding-top:5rem!important;padding-bottom:5rem!important">
+        style="background-image:url('images/stats-bg.svg');padding-top:5rem!important;padding-bottom:5rem!important">
         <div class="stats-overlay"></div>
         <div class="container position-relative" style="z-index:2">
             <div class="row g-4 text-center">
