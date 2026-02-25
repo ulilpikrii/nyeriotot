@@ -1,7 +1,43 @@
 User-agent: *
 Allow: /
+Disallow:
 
-Sitemap: https://outboundmalang.com/sitemap.xml
+# Sitemap
+Sitemap: https://gemilangoutbound.com/sitemap.xml
 
-# Outbound Malang - Gemilang Katun Outbound
-# Website outbound dan team building profesional di Kota Batu, Malang
+# Search Engine Bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Social Media Bots
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Crawl-delay
+User-agent: *
+Crawl-delay: 1
+
+# Host
+Host: https://gemilangoutbound.com
