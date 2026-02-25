@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -35,14 +35,14 @@
     <meta name="geo.position" content="-7.8826;112.5233">
     <meta name="ICBM" content="-7.8826, 112.5233">
     <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>">
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸ”ï¸</text></svg>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" media="print" onload="this.media='all'">    <noscript><link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"></noscript>
     <style>
         :root {
             --primary: #ff6933;
@@ -96,8 +96,8 @@
 
         .navbar-custom {
             background: rgba(26, 67, 49, .85);
-            backdrop-filter: blur(14px);
-            -webkit-backdrop-filter: blur(14px);
+            
+            -webkit-
             border-bottom: 1px solid rgba(255, 255, 255, .05);
             transition: all .3s
         }
@@ -492,11 +492,7 @@
             text-decoration: none;
             border: none;
             cursor: pointer;
-            animation: wa-pulse 2s infinite
-        }
-
-        .wa-btn:hover {
-            transform: scale(1.1) translateY(-3px);
+            
             box-shadow: 0 6px 30px rgba(37, 211, 102, .55);
             color: #fff
         }
@@ -518,7 +514,7 @@
             height: 44px;
             border-radius: 50%;
             background: rgba(255, 255, 255, .12);
-            backdrop-filter: blur(10px);
+            
             border: 1px solid rgba(255, 255, 255, .15);
             color: #fff;
             display: flex;
@@ -563,6 +559,7 @@
         type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Beranda","item":"https://gemilangoutbound.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://gemilangoutbound.com/blog.html"},{"@type":"ListItem","position":3,"name":"Manfaat Team Building","item":"https://gemilangoutbound.com/artikel-3.html"}]}</script>
     <script
         type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apa manfaat utama team building untuk perusahaan?","acceptedAnswer":{"@type":"Answer","text":"Manfaat utama team building meliputi peningkatan komunikasi tim, penguatan kepercayaan antar anggota, peningkatan produktivitas, pengembangan kepemimpinan, dan peningkatan moral serta kepuasan karyawan."}},{"@type":"Question","name":"Berapa idealnya frekuensi team building untuk perusahaan?","acceptedAnswer":{"@type":"Answer","text":"Idealnya perusahaan melakukan team building outbound 2-4 kali per tahun. Frekuensi ini cukup untuk menjaga dinamika tim tetap positif tanpa mengganggu operasional harian."}},{"@type":"Question","name":"Mengapa outbound lebih efektif daripada pelatihan indoor?","acceptedAnswer":{"@type":"Answer","text":"Outbound melatih soft skill secara experiential (learning by doing) di alam terbuka. Tantangan fisik dan mental yang dihadapi bersama menciptakan ikatan emosional yang lebih kuat dibanding pelatihan teori di ruangan."}}]}</script>
+    <link rel="preload" as="image" href="images/corporate-event.webp" fetchpriority="high">
 </head>
 
 <body>
@@ -621,7 +618,7 @@
                             class="bi bi-person me-1"></i>Ulil</span><span><i class="bi bi-calendar3 me-1"></i>20
                         Februari 2026</span><span><i class="bi bi-clock me-1"></i>7 menit baca</span></div>
 
-                <img src="images/corporate-event.webp"
+                <img fetchpriority="high" src="images/corporate-event.webp"
                     alt="Tim perusahaan melakukan kegiatan team building outbound di alam terbuka Batu Malang"
                     width="1200" height="630" loading="eager">
                 <p class="img-caption">Kegiatan team building outdoor membangun ikatan emosional yang lebih kuat antar
@@ -658,16 +655,16 @@
                     tertutup mata melalui rintangan. Situasi ini memaksa peserta untuk berkomunikasi dengan jelas,
                     mendengarkan dengan cermat, dan membangun trust yang mendalam.</p>
                 <ul>
-                    <li><strong>Menghilangkan sekat antar departemen</strong> — Tim dari berbagai divisi bisa saling
+                    <li><strong>Menghilangkan sekat antar departemen</strong> â€” Tim dari berbagai divisi bisa saling
                         mengenal dan memahami cara kerja masing-masing.</li>
-                    <li><strong>Melatih active listening</strong> — Peserta belajar untuk benar-benar mendengarkan,
+                    <li><strong>Melatih active listening</strong> â€” Peserta belajar untuk benar-benar mendengarkan,
                         bukan sekadar menunggu giliran berbicara.</li>
-                    <li><strong>Membangun empati</strong> — Menghadapi tantangan bersama menciptakan pemahaman yang
+                    <li><strong>Membangun empati</strong> â€” Menghadapi tantangan bersama menciptakan pemahaman yang
                         lebih dalam tentang kekuatan dan kelemahan masing-masing anggota tim.</li>
                 </ul>
 
                 <blockquote>"Komunikasi yang baik bukan hanya tentang berbicara dengan jelas, tetapi juga tentang
-                    mendengarkan dengan hati. Outbound mengajarkan keduanya secara bersamaan." — Filosofi Team Building
+                    mendengarkan dengan hati. Outbound mengajarkan keduanya secara bersamaan." â€” Filosofi Team Building
                     Gemilang Outbound</blockquote>
 
                 <h2 id="manfaat-2-kepercayaan">Manfaat 2: Membangun Kepercayaan Antar Anggota Tim</h2>
@@ -706,14 +703,14 @@
 
                 <div class="baca-juga">
                     <h4><i class="bi bi-bookmark me-2"></i>Baca Juga</h4>
-                    <a href="artikel-1.html">→ Panduan Lengkap Outbound di Batu Malang untuk Pemula</a>
-                    <a href="artikel-4.html">→ Rekomendasi Lokasi Outbound Terbaik di Batu Malang 2026</a>
+                    <a href="artikel-1.html">â†’ Panduan Lengkap Outbound di Batu Malang untuk Pemula</a>
+                    <a href="artikel-4.html">â†’ Rekomendasi Lokasi Outbound Terbaik di Batu Malang 2026</a>
                 </div>
 
                 <h2 id="manfaat-4-kepemimpinan">Manfaat 4: Mengembangkan Jiwa Kepemimpinan</h2>
                 <p>Team building outbound adalah wahana yang sempurna untuk mengidentifikasi dan mengembangkan potensi
                     kepemimpinan dalam organisasi. Dalam setting outdoor yang menantang, pemimpin alami akan muncul
-                    secara organik — terlepas dari jabatan formal mereka di kantor.</p>
+                    secara organik â€” terlepas dari jabatan formal mereka di kantor.</p>
 
                 <h3 id="leadership-development">Pengembangan Leadership Melalui Outbound</h3>
                 <p>Kegiatan outdoor menuntut pengambilan keputusan cepat, delegasi tugas yang efektif, dan kemampuan
@@ -734,7 +731,7 @@
                 <h3 id="dampak-well-being">Dampak pada Well-being Karyawan</h3>
                 <p>Penelitian menunjukkan bahwa karyawan yang rutin mendapatkan kegiatan rekreasi dari perusahaan
                     memiliki tingkat stres 25% lebih rendah dan loyalitas 35% lebih tinggi. Efek positif ini tidak
-                    bersifat sesaat — bonding yang terbentuk selama outbound menciptakan lingkungan kerja yang lebih
+                    bersifat sesaat â€” bonding yang terbentuk selama outbound menciptakan lingkungan kerja yang lebih
                     positif dan supportif dalam jangka panjang.</p>
 
                 <img src="images/hero-camping.webp"
@@ -748,7 +745,7 @@
                     <img src="images/corporate-event.webp" alt="Promo paket team building korporat Gemilang Outbound"
                         width="600" height="400" loading="lazy">
                     <p style="color:var(--primary);font-weight:700;margin-top:.75rem;margin-bottom:0;font-size:.9rem;">
-                        🏢 Paket Team Building Korporat mulai Rp 250.000/orang! <a
+                        ðŸ¢ Paket Team Building Korporat mulai Rp 250.000/orang! <a
                             href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20tahu%20paket%20team%20building%20korporat"
                             target="_blank" rel="noopener noreferrer"
                             style="color:#fff;text-decoration:underline;">Konsultasi Gratis</a></p>
@@ -765,7 +762,7 @@
                     kami memastikan setiap program memberikan dampak positif yang terukur bagi tim Anda.</p>
 
                 <h2 id="kesimpulan">Kesimpulan</h2>
-                <p>Team building outbound bukan sekadar kegiatan rekreasi — ini adalah investasi strategis yang
+                <p>Team building outbound bukan sekadar kegiatan rekreasi â€” ini adalah investasi strategis yang
                     memberikan manfaat nyata bagi produktivitas, komunikasi, kepercayaan, kepemimpinan, dan
                     kesejahteraan tim perusahaan Anda. Dengan memilih <strong>vendor outbound Batu Malang
                         terpercaya</strong>, Anda bisa memastikan bahwa investasi ini memberikan return yang maksimal.
@@ -931,7 +928,7 @@
             </div>
             <div class="border-top pt-4 d-flex flex-column flex-md-row align-items-center justify-content-between gap-3"
                 style="border-color:rgba(255,255,255,.05)!important;">
-                <p class="mb-0" style="color:rgba(249,246,240,.35);font-size:.75rem;">© 2026 Gemilang Outbound. Hak
+                <p class="mb-0" style="color:rgba(249,246,240,.35);font-size:.75rem;">Â© 2026 Gemilang Outbound. Hak
                     cipta dilindungi undang-undang.</p>
                 <div class="d-flex gap-3"><a href="https://instagram.com/gemilangoutbound" target="_blank"
                         rel="noopener noreferrer" style="color:rgba(249,246,240,.35);" aria-label="Instagram"><i
@@ -952,7 +949,7 @@
             class="wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp"><i
                 class="bi bi-whatsapp"></i></a></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         window.addEventListener('scroll', function () { document.getElementById('scrollTopBtn').classList.toggle('show', window.scrollY > 400); document.getElementById('mainNavbar').style.background = window.scrollY > 50 ? 'rgba(26,67,49,.95)' : 'rgba(26,67,49,.85)'; });
         (function () { var a = document.querySelector('.article-content'), h = a.querySelectorAll('h2[id],h3[id]'), t = document.getElementById('tocLinks'); h.forEach(function (e) { var l = document.createElement('li'); if (e.tagName === 'H3') l.classList.add('toc-h3'); var c = document.createElement('a'); c.href = '#' + e.id; c.innerHTML = '<i class="bi bi-chevron-right"></i>' + e.textContent; l.appendChild(c); t.appendChild(l); }); })();
@@ -965,3 +962,7 @@
 </body>
 
 </html>
+
+
+
+
